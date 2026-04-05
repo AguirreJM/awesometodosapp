@@ -1,0 +1,110 @@
+/* CSS RESET */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+/* APP */
+
+/* container */
+
+/* Center the whole app */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* The Form at the top */
+.form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form__input {
+  padding: 5px;
+  width: 300px;
+  border: 1px solid #000;
+}
+
+.mutations {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.todo__status,
+.todo__delete {
+    border: none;
+    padding: 0;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.todo__status:hover,
+.todo__delete:hover {
+    transform: scale(1.1);
+}
+
+.form__button {
+  padding: 5px 15px;
+  background-color: #332929;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+/* The Todo rows */
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e0e0; /* That light gray color */
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.todo p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.todo__status {
+  background: none;
+  border: 1px solid #000;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
